@@ -34,7 +34,8 @@ Ce projet est à la base un devoir pour un cours de programmation. De nombreuses
 
 Les simulations peuvent être visuelles ou textuelles (dans un fichier ou dans le terminal). Il est également possible d'écrire les données du système dans un fichier .csv pour ensuite tracer des graphiques avec un tableur.
 
-![Basic](https://github.com/NilsCt/gazparfaits/blob/main/images/basic.mp4)
+![Basic](https://github.com/NilsCt/gazparfaits/blob/main/images/basic1.png)
+![Basic](https://github.com/NilsCt/gazparfaits/blob/main/images/basic2.png)
 
 ###### Différentes particules
 
@@ -52,7 +53,7 @@ Il est possible de suivre la trajectoire d'une ou plusieurs particules sélectio
 
 Les trajectoires sont représentées par des segments dans la visualisation graphique.
 
-![Suivi](https://github.com/NilsCt/gazparfaits/blob/main/images/suivi.mp4)
+![Suivi](https://github.com/NilsCt/gazparfaits/blob/main/images/suivi.png)
 
 ###### Enceinte
 
@@ -78,8 +79,6 @@ Les calculs sont dynamiques : les grandeurs sont actualisées à chaque évoluti
 
 Le calcul de la pression se fait en calculant l'impulsion donnée à chaque particule qui rebondit sur une paroi. Un filtre à moyenne mobile est utilisé pour lisser les variations brutales de pression liées à l'aléatoire des rebonds.
 
-![Touche t](https://github.com/NilsCt/gazparfaits/blob/main/images/touche-t.png)
-
 ###### Transformations
 
 Le système gère une file d'attente de transformations appliquées chacune leur tour pendant une durée propre.
@@ -90,11 +89,9 @@ Il est de plus possible d'initier des cycles de Carnot et Stirling avec des para
 
 Enfin, il est possible d'activer une option pour que les couleurs des particules dépendent de leur énergie cinétique afin de visualiser les modifications de température dans l'enceinte.
 
-![Cycle de Stirling](https://github.com/NilsCt/gazparfaits/blob/main/images/stirling.mp4)
+![Cycle de Stirling froid](https://github.com/NilsCt/gazparfaits/blob/main/images/stirling_froid.png)
 
-![Cycle de Carnot](https://github.com/NilsCt/gazparfaits/blob/main/images/carnot.mp4)
-
-![Cycle](https://github.com/NilsCt/gazparfaits/blob/main/images/random.mp4)
+![Cycle de Stirling chaud](https://github.com/NilsCt/gazparfaits/blob/main/images/stirling_chaud.png)
 
 
 
