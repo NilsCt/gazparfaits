@@ -1,0 +1,90 @@
+Le système est constitué de 4 particules :
+particule Neon : pos : 10 8 5 ; v : 0 1 0 ; m : 20.1797
+particule Neon : pos : 10 12 5 ; v : 0 -1 0 ; m : 20.1797
+particule Argon : pos : 5 3 16 ; v : -1 -2 -2 ; m : 39.948
+particule Helium : pos : 9 17 8 ; v : -1 0 -1 ; m : 4.002602
+Dans une enceinte :
+hauteur : 20 ; largeur : 20 ; profondeur : 20
+====================
+Température : 0.00408689 K
+Énergie interne : 3.38554e-25 J
+Volume : 8e-27 m3
+Masse : 1.39955e-25 kg
+Temps écoulé : 0 s
+
+Loi des gaz parfaits :
+    Pression théorique : 28.2128 Pa
+    Pression effective : 0 Pa
+
+Loi de Dalton :
+Somme des pressions partielles : 0 Pa
+
+Mouvement Brownien :
+    Quantité de mouvement théorique : 0 0 0
+    Quantité de mouvement : -7.2958e-26 -1.32627e-25 -1.39272e-25
+    Centre de masse théorique : 10 10 10
+    Centre de masse : 7.58341 7.01556 10.3545
+====================
+Lancement de la simulation
+====================
+particule Neon : pos : 10 9 5 ; v : 0 1 0 ; m : 20.1797
+particule Neon : pos : 10 11 5 ; v : 0 -1 0 ; m : 20.1797
+particule Argon : pos : 4 1 14 ; v : -1 -2 -2 ; m : 39.948
+particule Helium : pos : 8 17 7 ; v : -1 0 -1 ; m : 4.002602
+hauteur : 20 ; largeur : 20 ; profondeur : 20
+====================
+La particule 2 entre en collision avec une autre particule.
+ avant le choc :
+   part. 2 : : pos : 10 10 5 ; v : 0 -1 0
+   autre   : : pos : 10 10 5 ; v : 0 1 0
+ apres le choc :
+   part. 2 : : pos : 10 10 5 ; v : -0.278271 0.381559 -0.881463
+   autre   : : pos : 10 10 5 ; v : 0.278271 -0.381559 0.881463
+La particule 3 rebondit sur la face 2
+particule Neon : pos : 10 10 5 ; v : 0.278271 -0.381559 0.881463 ; m : 20.1797
+particule Neon : pos : 10 10 5 ; v : -0.278271 0.381559 -0.881463 ; m : 20.1797
+particule Argon : pos : 3 1 12 ; v : -1 2 -2 ; m : 39.948
+particule Helium : pos : 7 17 6 ; v : -1 0 -1 ; m : 4.002602
+hauteur : 20 ; largeur : 20 ; profondeur : 20
+====================
+particule Neon : pos : 10.2783 9.61844 5.88146 ; v : 0.278271 -0.381559 0.881463 ; m : 20.1797
+particule Neon : pos : 9.72173 10.3816 4.11854 ; v : -0.278271 0.381559 -0.881463 ; m : 20.1797
+particule Argon : pos : 2 3 10 ; v : -1 2 -2 ; m : 39.948
+particule Helium : pos : 6 17 5 ; v : -1 0 -1 ; m : 4.002602
+hauteur : 20 ; largeur : 20 ; profondeur : 20
+====================
+particule Neon : pos : 10.5565 9.23688 6.76293 ; v : 0.278271 -0.381559 0.881463 ; m : 20.1797
+particule Neon : pos : 9.44346 10.7631 3.23707 ; v : -0.278271 0.381559 -0.881463 ; m : 20.1797
+particule Argon : pos : 1 5 8 ; v : -1 2 -2 ; m : 39.948
+particule Helium : pos : 5 17 4 ; v : -1 0 -1 ; m : 4.002602
+hauteur : 20 ; largeur : 20 ; profondeur : 20
+====================
+particule Neon : pos : 10.8348 8.85532 7.64439 ; v : 0.278271 -0.381559 0.881463 ; m : 20.1797
+particule Neon : pos : 9.16519 11.1447 2.35561 ; v : -0.278271 0.381559 -0.881463 ; m : 20.1797
+particule Argon : pos : 1.11022e-16 7 6 ; v : -1 2 -2 ; m : 39.948
+particule Helium : pos : 4 17 3 ; v : -1 0 -1 ; m : 4.002602
+hauteur : 20 ; largeur : 20 ; profondeur : 20
+====================
+====================
+Température : 0.00408689 K
+Énergie interne : 3.38554e-25 J
+Volume : 8e-27 m3
+Masse : 1.39955e-25 kg
+Temps écoulé : 5e-10 s
+
+Loi des gaz parfaits :
+    Pression théorique : 28.2128 Pa
+    Pression effective : 27.6307 Pa
+
+Loi de Dalton :
+    pression partielle de 5Argon : 36.8409 Pa
+Somme des pressions partielles : 36.8409 Pa
+
+Mouvement Brownien :
+    Quantité de mouvement théorique : 0 0 0
+    Quantité de mouvement : -7.2958e-26 1.32627e-25 -1.39272e-25
+    Centre de masse théorique : 10 10 10
+    Centre de masse : 3.58427 7.36637 6.38429
+====================
+
+
