@@ -24,8 +24,8 @@ SOURCES += \
     #testSuivi.cc \
     #testComportement.cc \
     #testDetenteDynamique.cc \
-    testEtat.cc \
-    #testTransformations.cc \
+    #testEtat.cc \
+    testTransformations.cc \
     #testPerformances.cc \
     \
     glwidget.cc \
