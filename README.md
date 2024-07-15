@@ -176,10 +176,25 @@ testPersonnalise.cc \
 
 Lire les anciens tests permet de mieux connaître les différentes manières d'initialiser les particules du système et les transformations souhaitées.
 
+##### Création du système
+
+Pour une simulation graphique, il faut créer le système à travers le GLWidget.
 ```
 GLWidget w(std::make_unique<Systeme>(std::make_unique<Enceinte>(100,80,60),std::make_unique<ComportementDynamique>()));
 Systeme& systeme(w.get_systeme());
 ```
+
+Pour une simulation textuelle, on peut créer le système directement.
+```
+Systeme systeme1;
+```
+
+La construction peut prendre en paramètre une enceinte et/ou un comportement.
+On peut aussi créé un système en donnant les dimensions de l'enceinte.
+```
+Systeme systeme2(20,30,40);
+```
+Par défaut, l'enceinte est de taille 20x20x20 et le comportement est naïf.
 
 ##### Initialisation des particules
 
