@@ -41,7 +41,7 @@ private:
     static constexpr double Na = 6.022140e23;
     static constexpr double k_b = Particule::R / Na;
 
-    static constexpr unsigned int max_points_pression = 300; // pour faire une moyenne et réduire la variabilité de la pression à un instant t
+    static constexpr unsigned int max_points_pression = 10; // pour faire une moyenne et réduire la variabilité de la pression à un instant t
 
     double calcule_pression(const CollectionMesuresPression&) const;
 
