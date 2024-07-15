@@ -21,9 +21,6 @@ int main(int argc, char* argv[])
      * Modification température : température finale, durée
      * Cycle : durée pour chaque étape (la même pour toute), T_a, V_a, T_c, V_c (avec A et C 2 points opposés dans le cycle)
      */
-
-
-    // Différentes transformations à tester
    
     // Enchainement de transformations de base
     //GLWidget w(std::make_unique<Systeme>(std::make_unique<Enceinte>(30,30,30),std::make_unique<ComportementDynamique>()));
@@ -39,11 +36,11 @@ int main(int argc, char* argv[])
 
 
     // Cycle de Stirling (moteur)
-    //GLWidget w(std::make_unique<Systeme>(std::make_unique<Enceinte>(40,40,40),std::make_unique<ComportementDynamique>()));
-    //Systeme& systeme(w.get_systeme());
-    //systeme.initialiser_particules(500, 25);
-    //w.actualiser_energie_reference(); // la couleur des particules dépend de leur énergie cinétique
-    //systeme.initialiser_cycle_stirling(10,5,64000,300,8000);
+    GLWidget w(std::make_unique<Systeme>(std::make_unique<Enceinte>(40,40,40),std::make_unique<ComportementDynamique>()));
+    Systeme& systeme(w.get_systeme());
+    systeme.initialiser_particules(500, 25);
+    w.actualiser_energie_reference(); // la couleur des particules dépend de leur énergie cinétique
+    systeme.initialiser_cycle_stirling(10,5,64000,300,8000);
     
      
     // Cycle de Carnot (moteur)
@@ -55,28 +52,15 @@ int main(int argc, char* argv[])
     
     
     // Modifications de l'enceinte asymétriques
-    GLWidget w(std::make_unique<Systeme>(std::make_unique<Enceinte>(40,40,40),std::make_unique<ComportementDynamique>()));
-    Systeme& systeme(w.get_systeme());
-    systeme.initialiser_particules(500, 30);
-    for(int i(0); i < 50; ++i) {
-        systeme.ajoute_transformation(std::make_unique<TravailIsotherme>(10,40,40, 5));
-        systeme.ajoute_transformation(std::make_unique<TravailIsotherme>(40,10,40, 5));
-        systeme.ajoute_transformation(std::make_unique<TravailIsotherme>(40,40,10, 5));
-    }
-    
-    // Dissipation de la chaleur
     //GLWidget w(std::make_unique<Systeme>(std::make_unique<Enceinte>(40,40,40),std::make_unique<ComportementDynamique>()));
     //Systeme& systeme(w.get_systeme());
-    //systeme.initialiser_particules(500, 300);
-    //systeme.ajoute_transformation(std::make_unique<ModificationTemperature>(1e-5, 30));
+    //systeme.initialiser_particules(500, 30);
+    //for(int i(0); i < 50; ++i) {
+    //    systeme.ajoute_transformation(std::make_unique<TravailIsotherme>(10,40,40, 5));
+    //    systeme.ajoute_transformation(std::make_unique<TravailIsotherme>(40,10,40, 5));
+    //    systeme.ajoute_transformation(std::make_unique<TravailIsotherme>(40,40,10, 5));
+    //}
     
-    // Implosion de l'enceinte
-    //GLWidget w(std::make_unique<Systeme>(std::make_unique<Enceinte>(40,40,40),std::make_unique<ComportementDynamique>()));
-    //Systeme& systeme(w.get_systeme());
-    //systeme.initialiser_particules(500, 100);
-    //systeme.ajoute_transformation(std::make_unique<TravailIsotherme>(0,0,0, 10));
-    
-
     w.show();
 
     return a.exec();
