@@ -351,16 +351,6 @@ Il faut donner en paramètre le nom du fichier. Celui-ci doit se trouver dans le
 
 Le fichier testDataWriter.cc dans le repertoire text constitue un bon exemple.
 
-Il est conseillé de diminuer le nombre de points du filtre à moyenne mobile pour le calcul de la pression afin d'éviter un "délai" dans les mesures.
-
-Dans le fichier Systeme.h, il faut descendre max_points_pression à 10 au lieu de 300.
-
-```
-static constexpr unsigned int max_points_pression = 10; # au lieu de 300
-```
-
-Puis on peut créer le support : 
-
 ```
 DataWriter dataWriter("donnees.csv");
 systeme.initialiser_cycle_carnot(17, 260, 64000, 350, 16000 );
